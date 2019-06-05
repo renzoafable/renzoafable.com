@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'bebas';
+  src: url('style/fonts/bebas.ttf');
+}
+
+:root {
+  --royal-blue: #1b4965;
+  color: rgb(225, 225, 225);
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  padding: 2em;
+  text-align: center;
+  background-color: var(--royal-blue, darkblue);
+}
+
+#author {
+  font-family: 'bebas', sans-serif;
+  font-size: 5em;
+  margin: 0;
+}
