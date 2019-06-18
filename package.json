@@ -1,23 +1,23 @@
 {
-  "name": "landingPage",
+  "name": "landingpage",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/renzoafable/githubPage.git"
+    "url": "git+https://github.com/renzoafable/personal-website.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/renzoafable/githubPage/issues"
+    "url": "https://github.com/renzoafable/personal-website/issues"
   },
-  "homepage": "https://renzoafable.github.io/personal-website",
-  "devDependencies": {
-    "gh-pages": "^2.0.1"
-  }
+  "homepage": "https://renzoafable.github.io/personal-website"
 }
