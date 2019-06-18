@@ -1,0 +1,147 @@
+/* ------------------------------ */
+/* SETUP */
+/* ------------------------------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #ffffff;
+  color: #424242;
+  font-family: 'Comfortaa', Tahoma, Geneva, Verdana, cursive;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* ------------------------------ */
+/* HEADINGS */
+/* ------------------------------ */
+
+h1,
+h2,
+h3 {
+  font-family: 'Chivo', sans-serif;
+  font-weight: lighter;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 370%;
+  margin: 0;
+}
+
+/* ------------------------------ */
+/* LOGOS */
+/* ------------------------------ */
+
+.logo-main {
+  height: 100px;
+  width: auto;
+  float: left;
+}
+
+/* ------------------------------ */
+/* HEADER */
+/* ------------------------------ */
+
+header {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url('./images/header-bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.header-text-box {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1140px;
+}
+
+.header-text-box h1 {
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.header-text-box a:link,
+.header-text-box a:visited {
+  color: #fff;
+  display: inline-block;
+  font-size: 90%;
+  letter-spacing: 3px;
+  padding: 5px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.header-text-box a:hover,
+.header-text-box a:active {
+  color: #bdbdbd;
+}
+
+.header-text-box span {
+  color: rgb(202, 202, 202);
+}
+
+.header-text-box a:last-child {
+  margin-right: 0;
+}
+
+.pointer {
+  color: #fff;
+  bottom: 7vh;
+  font-size: 150%;
+  left: 50%;
+  position: absolute;
+}
+
+/* ------------------------------ */
+/* MAIN NAV */
+/* ------------------------------ */
+
+.main-nav {
+  list-style: none;
+  margin-top: 40px;
+  float: right;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  color: #ffffff;
+  border-bottom: 2px solid transparent;
+  letter-spacing: 3px;
+  padding: 10px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: border-bottom 0.3s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #fff;
+}
