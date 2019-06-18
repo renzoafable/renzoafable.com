@@ -12,13 +12,43 @@ html {
   background-color: #ffffff;
   color: #424242;
   font-family: 'Comfortaa', Tahoma, Geneva, Verdana, cursive;
-  font-size: 16px;
+  font-size: 18px;
   text-rendering: optimizeLegibility;
+}
+
+section {
+  padding: 50px 0;
 }
 
 .row {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+/* ------------------------------ */
+/* BUTTONS */
+/* ------------------------------ */
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 0.7rem 0.7rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s, border 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #0493b0;
+  border: 1px solid #0493b0;
+  color: #fff;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  background-color: #0a7286;
+  border: 1px solid #0a7286;
 }
 
 /* ------------------------------ */
@@ -29,15 +59,36 @@ h1,
 h2,
 h3 {
   font-family: 'Chivo', sans-serif;
-  font-weight: lighter;
+  font-weight: 300;
+  letter-spacing: 2px;
 }
 
 h1 {
   color: #ffffff;
-  font-size: 370%;
+  font-size: 300%;
   margin: 0;
 }
 
+h2 {
+  font-size: 200%;
+  text-align: center;
+  text-transform: uppercase;
+  word-spacing: 4px;
+}
+
+h2:after {
+  background-color: #0493b0;
+  content: '';
+  display: block;
+  height: 5px;
+  margin: 20px auto 30px auto;
+  width: 100px;
+}
+
+h3 {
+  font-size: 140%;
+  text-align: center;
+}
 /* ------------------------------ */
 /* LOGOS */
 /* ------------------------------ */
@@ -55,8 +106,8 @@ h1 {
 header {
   background-image: linear-gradient(
       180deg,
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.8)
+      rgba(20, 20, 20, 0.9),
+      rgba(20, 20, 20, 0.9)
     ),
     url('./images/header-bg.jpg');
   background-attachment: fixed;
@@ -78,41 +129,24 @@ header {
 }
 
 .header-text-box h1 {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   letter-spacing: 2px;
 }
 
-.header-text-box a:link,
-.header-text-box a:visited {
-  color: #fff;
-  display: inline-block;
-  font-size: 90%;
-  letter-spacing: 3px;
-  padding: 5px 20px;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: color 0.3s;
+.name {
+  color: #e31b6d;
+  font-weight: 400;
 }
 
-.header-text-box a:hover,
-.header-text-box a:active {
-  color: #bdbdbd;
-}
-
-.header-text-box span {
-  color: rgb(202, 202, 202);
-}
-
-.header-text-box a:last-child {
-  margin-right: 0;
+.header-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pointer {
+  padding-left: 5px;
   color: #fff;
-  bottom: 7vh;
-  font-size: 150%;
-  left: 50%;
-  position: absolute;
 }
 
 /* ------------------------------ */
@@ -143,5 +177,43 @@ header {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #0493b0;
+}
+
+/* ------------------------------ */
+/* WORK NAV */
+/* ------------------------------ */
+
+.nav-work {
+  background-color: rgba(20, 20, 20, 0.95);
+  border-bottom: 3px solid #0493b0;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.nav-work ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-work ul li {
+  display: inline-block;
+  padding: 20px;
+}
+
+.nav-work-item:link,
+.nav-work-item:visited {
+  color: #fff;
+  font-size: 85%;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.nav-work-item:hover,
+.nav-work-item:active {
+  color: #e31b6d;
 }

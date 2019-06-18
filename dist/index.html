@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Landing Page</title>
+    <title>renzoafable.com</title>
   </head>
   <!-- STYLESHEETS -->
   <link rel="stylesheet" href="./style/normalize.css" />
@@ -16,7 +16,11 @@
 
   <!-- FONTS -->
   <link
-    href="https://fonts.googleapis.com/css?family=Chivo|Comfortaa&display=swap"
+    href="https://fonts.googleapis.com/css?family=Chivo:300,400&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&display=swap"
     rel="stylesheet"
   />
 
@@ -44,15 +48,49 @@
       </nav>
 
       <div class="header-text-box">
-        <h1>Get to know me and my work!</h1>
-        <a href="#">Proficiencies</a>
-        <span>&mdash;</span>
-        <a href="#">Projects</a>
-        <span>&mdash;</span>
-        <a href="#">Experience</a>
+        <h1>
+          Hello, I'm <span class="name">Renzo Afable</span>. <br />
+          <span class="typed"></span>
+        </h1>
+        <a href="#" class="btn btn-full header-btn">
+          View my work
+          <i class="icon ion-md-arrow-forward pointer"></i>
+        </a>
       </div>
-
-      <span class="pointer"><i class="icon ion-ios-arrow-down"></i></span>
     </header>
+    <nav class="nav-work">
+      <div class="row">
+        <ul>
+          <li><a href="#" class="nav-work-item">Skills</a></li>
+          <li><a href="#" class="nav-work-item">Projects</a></li>
+          <li><a href="#" class="nav-work-item">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="section-skills">
+      <h2>Skills</h2>
+      <div class="row">
+        <div class="col span-1-of-2">
+          <h3>Technologies</h3>
+        </div>
+        <div class="col span-1-of-2">
+          <h3>Principles</h3>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+    <script>
+      var typed = new Typed('.typed', {
+        strings: [
+          "I'm a hardcore gamer. ^700",
+          "I'm a tech geek. ^700",
+          "I'm a full-stack web developer."
+        ],
+        smartBackspace: true,
+        typeSpeed: 40
+      });
+    </script>
   </body>
 </html>
