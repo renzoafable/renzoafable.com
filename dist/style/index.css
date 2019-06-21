@@ -10,7 +10,7 @@
 
 html {
   background-color: #ffffff;
-  color: #424242;
+  color: #555555;
   font-family: 'Comfortaa', Tahoma, Geneva, Verdana, cursive;
   font-size: 18px;
   text-rendering: optimizeLegibility;
@@ -81,12 +81,17 @@ h2:after {
   content: '';
   display: block;
   height: 5px;
-  margin: 20px auto 30px auto;
+  margin: 20px auto 50px auto;
   width: 100px;
 }
 
 h3 {
   font-size: 140%;
+}
+
+.author-info figcaption h3 {
+  font-weight: 400;
+  margin: 10px 0;
   text-align: center;
 }
 /* ------------------------------ */
@@ -153,10 +158,17 @@ header {
 /* MAIN NAV */
 /* ------------------------------ */
 
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: auto;
+}
+
 .main-nav {
   list-style: none;
-  margin-top: 40px;
-  float: right;
 }
 
 .main-nav li {
@@ -168,6 +180,7 @@ header {
 .main-nav li a:visited {
   color: #ffffff;
   border-bottom: 2px solid transparent;
+  font-size: 80%;
   letter-spacing: 3px;
   padding: 10px 0;
   text-transform: uppercase;
@@ -194,7 +207,6 @@ header {
 .nav-work ul {
   list-style: none;
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 
@@ -216,4 +228,31 @@ header {
 .nav-work-item:hover,
 .nav-work-item:active {
   color: #e31b6d;
+}
+
+/* ------------------------------ */
+/* ABOUT */
+/* ------------------------------ */
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.author-info img {
+  box-shadow: 10px 10px 0 #888888;
+  height: auto;
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.author-info figcaption {
+  padding: 0 30px;
+}
+
+.author-info figcaption p {
+  text-align: center;
+  line-height: 145%;
 }

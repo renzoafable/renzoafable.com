@@ -33,7 +33,7 @@
     <header>
       <nav>
         <div class="row">
-          <a href="#">
+          <a href="#" class="logo">
             <img
               src="./assets/images/logo-white.png"
               alt="Main logo"
@@ -41,8 +41,10 @@
             />
           </a>
           <ul class="main-nav">
-            <li><a href="./index.html">Work</a></li>
             <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -58,29 +60,26 @@
         </a>
       </div>
     </header>
-    <nav class="nav-work">
-      <div class="row">
-        <ul>
-          <li><a href="#" class="nav-work-item">Skills</a></li>
-          <li><a href="#" class="nav-work-item">Projects</a></li>
-          <li><a href="#" class="nav-work-item">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <section class="section-skills">
-      <h2>Skills</h2>
+
+    <section class="section-about">
+      <h2>About</h2>
       <div class="row">
         <div class="col span-1-of-2">
-          <h3>Technologies</h3>
-        </div>
-        <div class="col span-1-of-2">
-          <h3>Principles</h3>
+          <figure class="author-info">
+            <img src="./assets/images/sablay.jpg" alt="Author's image" />
+            <figcaption>
+              <h3>Who's this guy?</h3>
+              <p>
+                I'm a full-stack web developer who has a serious passion for
+                creating functional and beatiful web applications.
+              </p>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-
     <script>
       var typed = new Typed('.typed', {
         strings: [
