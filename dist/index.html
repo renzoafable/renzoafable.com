@@ -8,31 +8,33 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>renzoafable.com</title>
+
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Chivo:300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICONS -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="./style/normalize.css" />
+    <link rel="stylesheet" href="./style/grid.css" />
+    <link rel="stylesheet" href="./style/index.css" />
   </head>
-  <!-- STYLESHEETS -->
-  <link rel="stylesheet" href="./style/normalize.css" />
-  <link rel="stylesheet" href="./style/grid.css" />
-  <link rel="stylesheet" href="./style/index.css" />
 
-  <!-- FONTS -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Chivo:300,400&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&display=swap"
-    rel="stylesheet"
-  />
-
-  <!-- ICONS -->
-  <link
-    href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css"
-    rel="stylesheet"
-  />
   <body>
     <header>
       <nav>
-        <div class="row">
+        <div class="row nav">
           <a href="#" class="logo">
             <img
               src="./assets/images/logo-white.png"
@@ -52,29 +54,106 @@
       <div class="header-text-box">
         <h1>
           Hello, I'm <span class="name">Renzo Afable</span>. <br />
-          <span class="typed"></span>
+          I'm a <span class="typed"></span>
         </h1>
         <a href="#" class="btn btn-full header-btn">
           View my work
-          <i class="icon ion-md-arrow-forward pointer"></i>
+          <i class="material-icons pointer">arrow_forward</i>
         </a>
       </div>
     </header>
 
     <section class="section-about">
       <h2>About</h2>
-      <div class="row">
-        <div class="col span-1-of-2">
+      <div class="row flex-container about">
+        <div>
           <figure class="author-info">
             <img src="./assets/images/sablay.jpg" alt="Author's image" />
             <figcaption>
               <h3>Who's this guy?</h3>
               <p>
-                I'm a full-stack web developer who has a serious passion for
-                creating functional and beatiful web applications.
+                I'm Renzo! I recently graduated with a degree in Computer
+                Science and I am quite passionate to learn new stuff and be part
+                of an extraordinary team.
               </p>
             </figcaption>
           </figure>
+        </div>
+        <div>
+          <div class="tech-item">
+            <h3>Languages</h3>
+            <ul>
+              <li>
+                <figure>
+                  <img src="./assets/images/html.png" alt="HTML logo" />
+                  <figcaption>HTML</figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="./assets/images/css.png" alt="CSS logo" />
+                  <figcaption>CSS</figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="./assets/images/js.png" alt="JavaScript logo" />
+                  <figcaption>JavaScript</figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="./assets/images/python.png" alt="Python logo" />
+                  <figcaption>Python</figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+          <div class="tech-item">
+            <h3>Front-end frameworks</h3>
+            <ul>
+              <li>
+                <figure>
+                  <img src="./assets/images/react.png" alt="ReactJS logo" />
+                  <figcaption>ReactJS</figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="./assets/images/angular.png" alt="AngularJS logo" />
+                  <figcaption>AngularJS</figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+          <div class="tech-item">
+            <h3>Back-end frameworks</h3>
+            <ul>
+              <li>
+                <figure>
+                  <img src="./assets/images/nodejs.png" alt="NodeJS logo" />
+                  <figcaption>NodeJS</figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+          <div class="tech-item">
+            <h3>Databases</h3>
+            <ul>
+              <li>
+                <figure>
+                  <img src="./assets/images/mongo.png" alt="MongoDB logo" />
+                  <figcaption>MongoDB</figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="./assets/images/mysql.png" alt="MySQL logo" />
+                  <figcaption>MySQL</figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -83,9 +162,9 @@
     <script>
       var typed = new Typed('.typed', {
         strings: [
-          "I'm a hardcore gamer. ^700",
-          "I'm a tech geek. ^700",
-          "I'm a full-stack web developer."
+          'hardcore gamer. ^700',
+          'tech geek. ^700',
+          'software engineer.'
         ],
         smartBackspace: true,
         typeSpeed: 40
