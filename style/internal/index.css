@@ -10,8 +10,7 @@
 
 html {
   background-color: #ffffff;
-  color: #555555;
-  font-family: 'Comfortaa', Tahoma, Geneva, Verdana, cursive;
+  font-family: 'Raleway', sans-serif;
   font-size: 16px;
   letter-spacing: 2px;
   text-rendering: optimizeLegibility;
@@ -19,19 +18,15 @@ html {
 
 section {
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-/* ------------------------------ */
-/* REUSABLE COMPONENTS */
-/* ------------------------------ */
-
-.row {
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-.flex-container {
-  display: flex;
+a,
+li,
+p,
+div {
+  color: #5e5e5e;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* ------------------------------ */
@@ -40,10 +35,6 @@ section {
 
 .btn:link,
 .btn:visited {
-  display: inline-block;
-  padding: 0.7rem 0.7rem;
-  text-align: center;
-  text-decoration: none;
   transition: background-color 0.2s, border 0.2s;
 }
 
@@ -78,19 +69,21 @@ h1 {
 }
 
 h2 {
-  font-size: 200%;
+  color: #5e5e5e;
+  font-size: 250%;
+  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
   word-spacing: 4px;
 }
 
 h2:after {
-  background-color: #0493b0;
+  background-color: #5e5e5e;
   content: '';
   display: block;
   height: 5px;
-  margin: 20px auto 50px auto;
-  width: 150px;
+  margin: 20px auto 75px auto;
+  width: 100px;
 }
 
 h3 {
@@ -243,77 +236,94 @@ nav div {
 
 .section-about {
   background-color: #f7f7f7;
-  height: 100vh;
 }
 
-.about > div {
-  padding: 0 20px;
-  flex-basis: 50%;
-}
-
-.author-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
-.author-info img {
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  height: auto;
-  margin-bottom: 20px;
-  width: 60%;
-}
-
-.author-info figcaption {
-  padding: 0 30px;
-}
-
-.author-info figcaption h3 {
-  font-weight: 400;
-  margin: 10px 0;
+.about-principle {
   text-align: center;
 }
 
-.author-info figcaption p {
+.about-principle i {
+  color: #0493b0;
+  font-size: 5rem;
+}
+
+.about-principle h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.about-principle p {
+  font-size: 1rem;
+}
+
+.about-author figure img {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: block;
+  height: auto;
+  margin: 0 auto 20px auto;
+  text-align: center;
+  max-width: 200px;
+}
+
+.about-author figure figcaption {
+  padding: 0 10px;
+}
+
+.about-author figure figcaption h3 {
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.about-author figure figcaption p {
   line-height: 150%;
   margin: 0 auto;
-  text-align: center;
-  width: 85%;
+  text-align: justify;
+  width: 95%;
 }
 
-.tech-item {
-  margin-bottom: 20px;
-  text-align: center;
-  width: 100%;
+.about-tech {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
-.tech-item h3 {
+.about-tech .tech-wrap:last-of-type {
+  margin-bottom: 0;
+}
+
+.about-tech h3 {
   background-color: #e31b6d;
   color: #fff;
   display: inline-block;
-  font-size: 130%;
   font-weight: 400;
-  margin: 0 auto 20px auto;
-  padding: 5px 15px;
+  margin: 0 auto 30px auto;
+  padding: 5px 10px;
   text-align: center;
+  width: 40%;
 }
 
-.tech-item ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
+.tech-wrap {
+  background-color: #0a7286;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
-.tech-item ul li {
+.tech-label {
+  background-color: #0493b0;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  width: 30%;
+}
+
+.tech-content {
+  width: 90%;
+}
+
+.tech-content span {
+  color: #fff;
   display: inline-block;
-  flex-basis: 20%;
-  margin: 5px 0;
-}
-
-.tech-item img {
-  width: auto;
-  height: 50px;
-  margin-bottom: 5px;
+  padding: 5px 8px;
 }
