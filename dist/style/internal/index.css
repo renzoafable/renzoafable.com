@@ -33,22 +33,24 @@ div {
 /* BUTTONS */
 /* ------------------------------ */
 
-.btn:link,
-.btn:visited {
-  transition: background-color 0.2s, border 0.2s;
+.bttn:link,
+.bttn:visited {
+  text-decoration: none;
+  padding: 12px 15px;
+  transition: background-color 0.4s, border 0.4s;
 }
 
 .btn-full:link,
 .btn-full:visited {
-  background-color: #0493b0;
-  border: 1px solid #0493b0;
+  background-color: transparent;
+  border: 2px solid #fff;
   color: #fff;
 }
 
 .btn-full:hover,
 .btn-full:active {
-  background-color: #0a7286;
-  border: 1px solid #0a7286;
+  background-color: #0493b0;
+  border: 2px solid #0493b0;
 }
 
 /* ------------------------------ */
@@ -70,7 +72,7 @@ h1 {
 
 h2 {
   color: #5e5e5e;
-  font-size: 250%;
+  font-size: 230%;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
@@ -78,7 +80,7 @@ h2 {
 }
 
 h2:after {
-  background-color: #5e5e5e;
+  background-color: #e31b6d;
   content: '';
   display: block;
   height: 5px;
@@ -100,6 +102,28 @@ h3 {
 }
 
 /* ------------------------------ */
+/* LINKS */
+/* ------------------------------ */
+.link:link,
+.link:visited {
+  color: #0a7286;
+  font-weight: 700;
+  padding-bottom: 1px;
+  text-decoration: none;
+}
+
+.ext-link:link,
+.ext-link:visited {
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.4s;
+}
+
+.ext-link:hover,
+.ext-link:active {
+  border-bottom: 2px solid #0a7286;
+}
+
+/* ------------------------------ */
 /* HEADER */
 /* ------------------------------ */
 
@@ -115,11 +139,6 @@ header {
   background-position: center;
   height: 100vh;
   position: relative;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
 }
 
 .header-text-box {
@@ -163,6 +182,10 @@ nav div {
   align-items: center;
 }
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
 .logo {
   margin-right: auto;
 }
@@ -272,7 +295,6 @@ nav div {
 .about-author figure figcaption h3 {
   font-weight: 400;
   margin-bottom: 10px;
-  text-align: center;
 }
 
 .about-author figure figcaption p {
@@ -313,7 +335,6 @@ nav div {
 .tech-label {
   background-color: #0493b0;
   color: #fff;
-  font-weight: bold;
   text-align: center;
   width: 30%;
 }
@@ -326,4 +347,29 @@ nav div {
   color: #fff;
   display: inline-block;
   padding: 5px 8px;
+}
+
+/* ------------------------------ */
+/* EXPERIENCE */
+/* ------------------------------ */
+
+.section-experience hr {
+  margin-top: 2px;
+}
+
+.experience-header p {
+  margin-bottom: 0;
+}
+
+.experience-header a {
+  display: inline-block;
+}
+
+.experience-header p:first-child {
+  font-weight: 700;
+}
+
+.experience-header p:last-child {
+  font-size: 0.7rem;
+  font-style: italic;
 }

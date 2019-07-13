@@ -47,8 +47,8 @@
           </a>
           <ul class="main-nav">
             <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#">Projects</a></li>
-            <li><a href="#">Experience</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
@@ -59,7 +59,7 @@
           Hello, I'm <span class="name">Renzo Afable</span>. <br />
           <span class="typed"></span>
         </h1>
-        <a href="#" class="btn btn-full" role="button">
+        <a href="#" class="bttn btn-full" role="button">
           View my work
           <i class="material-icons pointer">arrow_forward</i>
         </a>
@@ -73,35 +73,46 @@
           <div class="col px-4 about-principle">
             <i class="material-icons mb-3">devices</i>
             <h3>Responsive</h3>
-            <p>Layouts should work on any device.</p>
+            <p>My layouts work on any device.</p>
           </div>
           <div class="col px-4 about-principle">
             <i class="material-icons mb-3">schedule</i>
             <h3>Fast</h3>
-            <p>Websites should load fast.</p>
+            <p>I make websites with fast load times in mind.</p>
           </div>
           <div class="col px-4 about-principle">
             <i class="material-icons mb-3">touch_app</i>
             <h3>Simple</h3>
-            <p>Easy to use UI/UX design.</p>
+            <p>I prefer creating easy to use UI/UX.</p>
           </div>
           <div class="col px-4 about-principle">
             <i class="material-icons mb-3">power</i>
             <h3>Dynamic</h3>
-            <p>Websites should come to life.</p>
+            <p>I like making websites come to life.</p>
           </div>
         </div>
         <div class="row">
           <div class="col col-lg-6">
             <div class="about-author">
-              <figure>
-                <img src="./assets/images/sablay.jpg" alt="Author's image" />
-                <figcaption>
+              <figure class="figure">
+                <img
+                  src="./assets/images/sablay.jpg"
+                  alt="Author's image"
+                  class="figure-img img-fluid"
+                />
+                <figcaption class="figure-caption text-center">
                   <h3>Who's this guy?</h3>
                   <p>
-                    Hi! I recently graduated with a degree in Computer Science
-                    and I'm very passionate to learn new things and be part of
-                    an extraordinary team.
+                    Hi! I recently graduated from the
+                    <a
+                      href="http://uplb.edu.ph/"
+                      class="link ext-link"
+                      target="_blank"
+                      >University of the Philippines Los Ba&ntilde;os</a
+                    >
+                    with a degree in Computer Science. I'm very passionate to
+                    learn new things and I'm excited to be a part of an
+                    extraordinary team.
                   </p>
                 </figcaption>
               </figure>
@@ -199,6 +210,31 @@
         </div>
       </div>
     </section>
+    <section class="section-experience container-fluid" id="experience">
+      <h2>Experience</h2>
+      <div class="w-50 mx-auto">
+        <div
+          class="d-flex align-items-center justify-content-between experience-header"
+        >
+          <a
+            href="http://www.saperium.com/"
+            class="text-uppercase link"
+            target="_blank"
+            >Saperium</a
+          >
+          <div>
+            <p>Sofware Engineer Intern</p>
+            <p>June 2018 - July 2018</p>
+          </div>
+        </div>
+        <hr />
+        <ul class="px-3 experience-details">
+          <li>Developed an in-house web application</li>
+          <li>Created an API using ExpressJS</li>
+          <li>Tested the API using Jasmine</li>
+        </ul>
+      </div>
+    </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script
@@ -217,10 +253,10 @@
     <script>
       var typed = new Typed('.typed', {
         strings: [
-          'Athlete ^700',
-          'Gamer ^700',
-          'Tech geek ^700',
-          'Software engineer'
+          'Athlete. ^700',
+          'Gamer. ^700',
+          'Tech geek. ^700',
+          'Software engineer.'
         ],
         smartBackspace: true,
         typeSpeed: 40
