@@ -1,0 +1,95 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 230%;
+  }
+
+  h2 {
+    font-size: 170%;
+  }
+
+  h2::after {
+    margin-bottom: 40px;
+  }
+
+  h3 {
+    font-size: 110%;
+  }
+
+  .about-principle p {
+    display: inline-block;
+    width: 60%;
+  }
+
+  figure {
+    margin-bottom: 3rem;
+  }
+
+  .about-author figure img {
+    margin-bottom: 10px;
+    max-width: 250px;
+  }
+
+  .about-author figure figcaption p {
+    width: 65%;
+  }
+
+  .about-tech {
+    align-items: center;
+  }
+
+  .tech-wrap {
+    width: 65%;
+  }
+
+  .experience-header {
+    flex-direction: column;
+  }
+
+  .experience-header p {
+    text-align: center;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 250%;
+  }
+
+  h2 {
+    font-size: 180%;
+  }
+
+  h3 {
+    font-size: 120%;
+  }
+
+  .about-principle i {
+    font-size: 7rem;
+  }
+
+  .about-principle p {
+    display: inline-block;
+    width: 60%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
