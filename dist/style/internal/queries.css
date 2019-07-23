@@ -1,22 +1,124 @@
+/* Small devices */
+@media (max-width: 575px) {
+  html {
+    font-size: 10px;
+  }
+
+  section {
+    padding: 30px 0;
+  }
+
+  h1 {
+    font-size: 210%;
+  }
+
+  h2 {
+    font-size: 150%;
+  }
+
+  h2::after {
+    height: 3px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 60px;
+  }
+
+  h3 {
+    font-size: 130%;
+  }
+
+  figure {
+    margin-bottom: 2rem;
+  }
+
+  .about-author figure img {
+    margin-bottom: 10px;
+    max-width: 150px;
+  }
+
+  .tech-wrap {
+    width: 90%;
+    margin-bottom: 7px;
+  }
+
+  .experience-header {
+    flex-direction: column;
+  }
+
+  .experience-header p {
+    text-align: center;
+  }
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {
   html {
-    font-size: 10px;
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 280%;
+  }
+
+  h2 {
+    font-size: 150%;
+  }
+
+  h2::after {
+    margin-bottom: 40px;
+  }
+
+  h3 {
+    font-size: 130%;
+  }
+
+  .about-principle p {
+    display: inline-block;
+    width: 60%;
+  }
+
+  figure {
+    margin-bottom: 3rem;
+  }
+
+  .about-author figure img {
+    margin-bottom: 10px;
+    max-width: 250px;
+  }
+
+  .about-author figure figcaption p {
+    width: 90%;
+  }
+
+  .about-tech {
+    align-items: center;
+  }
+
+  .tech-wrap {
+    width: 90%;
+  }
+
+  .experience-header {
+    flex-direction: column;
+  }
+
+  .experience-header p {
+    text-align: center;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
   html {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   h1 {
-    font-size: 230%;
+    font-size: 190%;
   }
 
   h2 {
-    font-size: 170%;
+    font-size: 150%;
   }
 
   h2::after {
@@ -42,7 +144,7 @@
   }
 
   .about-author figure figcaption p {
-    width: 65%;
+    width: 75%;
   }
 
   .about-tech {
@@ -50,7 +152,7 @@
   }
 
   .tech-wrap {
-    width: 65%;
+    width: 75%;
   }
 
   .experience-header {

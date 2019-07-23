@@ -21,7 +21,7 @@
 
     <!-- ICONS -->
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
       rel="stylesheet"
     />
 
@@ -55,65 +55,73 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <i class="material-icons md-light">menu</i>
+            <i class="icon ion-ios-menu"></i>
           </button>
           <div
             class="collapse navbar-collapse justify-content-end"
             id="navbarCollapse"
           >
-            <ul class="navbar-nav">
+            <ul class="navbar-nav text-center">
               <li class="nav-item link-container">
-                <a href="#about">About</a>
+                <a class="nav-link" data-smooth="#about" href="#about">About</a>
               </li>
               <li class="nav-item link-container">
-                <a href="#experience">Experience</a>
+                <a class="nav-link" data-smooth="#about" href="#experience"
+                  >Experience</a
+                >
               </li>
               <li class="nav-item link-container">
-                <a href="#project">Projects</a>
+                <a class="nav-link" data-smooth="#about" href="#project"
+                  >Projects</a
+                >
               </li>
-              <li class="nav-item link-container"><a href="#">Contact</a></li>
+              <li class="nav-item link-container">
+                <a class="nav-link" data-smooth="#about" href="#">Contact</a>
+              </li>
             </ul>
           </div>
         </nav>
       </div>
 
-      <div class="header-text-box">
-        <h1>
-          Hello, I'm <span class="name">Renzo Afable</span>. <br />
-          <span class="typed"></span>
-        </h1>
+      <div class="container">
+        <div class="header-text-box">
+          <h1>
+            Hello, I'm <span class="name">Renzo Afable</span>. <br />
+            <span class="typed"></span>
+          </h1>
+        </div>
       </div>
     </header>
 
-    <section class="section-about container-fluid" id="about">
+    <section class="section-about" id="about">
       <h2>About</h2>
       <div class="container">
         <div class="row mb-5">
-          <div class="col col-md-6 col-lg-6 col-xl-3 px-lg-4 about-principle">
-            <i class="material-icons mb-3">devices</i>
+          <div class="col-6 col-xl-3 px-lg-4 about-principle">
+            <i class="icon ion-ios-phone-portrait"></i>
             <h3>Responsive</h3>
             <p>My layouts work on any device.</p>
           </div>
-          <div class="col col-md-6 col-lg-6 col-xl-3 px-lg-4 about-principle">
-            <i class="material-icons mb-3">schedule</i>
+          <div class="col-6 col-xl-3 px-lg-4 about-principle">
+            <i class="icon ion-ios-timer"></i>
             <h3>Fast</h3>
             <p>
               I make websites with fast load times in mind.
             </p>
           </div>
-          <div class="col col-md-6 col-lg-6 col-xl-3 px-lg-4 about-principle">
-            <i class="material-icons mb-3">touch_app</i>
-            <h3>Simple</h3>
+          <div class="col-6 col-xl-3 px-lg-4 about-principle">
+            <i class="icon ion-ios-person"></i>
+            <h3>User-friendly</h3>
             <p>I prefer creating easy to use UI/UX.</p>
           </div>
-          <div class="col col-md-6 col-lg-6 col-xl-3 px-lg-4 about-principle">
-            <i class="material-icons mb-3">power</i>
+          <div class="col-6 col-xl-3 px-lg-4 about-principle">
+            <i class="icon ion-ios-jet"></i>
             <h3>Dynamic</h3>
             <p>I like making websites come to life.</p>
           </div>
         </div>
         <div class="row">
-          <div class="col col-md-12 col-lg-6">
+          <div class="col-12 col-lg-6">
             <div class="about-author">
               <figure class="figure">
                 <img
@@ -139,7 +147,7 @@
               </figure>
             </div>
           </div>
-          <div class="col col-md-12 col-lg-6">
+          <div class="col-12 col-lg-6">
             <div class="about-tech">
               <div class="d-flex align-items-stretch tech-wrap">
                 <div
@@ -248,9 +256,18 @@
         </div>
         <hr />
         <ul class="px-3 experience-details">
-          <li>Developed an in-house web application</li>
-          <li>Created an API using ExpressJS</li>
-          <li>Tested the API using Jasmine</li>
+          <li>
+            Developed an in-house web application using the company’s tech stack
+            and coding practices.
+          </li>
+          <li>
+            Participated in daily retrospective meetings as part of the software
+            development process.
+          </li>
+          <li>
+            Tech stack: Angular, Express, Node, MySQL, Bootstrap, Jasmine,
+            SocketIO
+          </li>
         </ul>
       </div>
     </section>
@@ -259,43 +276,86 @@
       <h2>Projects</h2>
       <div class="container">
         <div class="row">
-          <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="col-12 col-sm-6 col-lg-4 mb-4">
+            <div class="card project-item">
+              <div class="card-body">
+                <div class="card-title">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h3>KDC</h3>
+                    <a href=""><i class="icon ion-logo-github"></i></a>
+                  </div>
+                </div>
+                <p class="card-text">
+                  A Windows desktop app for comparing live and recorded dance
+                  movements using Microsoft's Kinect.
+                </p>
+                <div class="card-footer bg-transparent text-center">
+                  <small class="text-muted">C#</small>
+                  <small class="text-muted">WPF</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 mb-4">
+            <div class="card project-item">
+              <div class="card-body">
+                <div class="card-title">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h3>Personal Website v1</h3>
+                    <div class="project-links">
+                      <a href=""><i class="icon ion-logo-github"></i></a>
+                      <a href=""><i class="icon ion-ios-open"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <p class="card-text">
+                  The first iteration of my personal website. It is currently
+                  hosted on Github pages.
+                </p>
+                <div class="bg-transparent text-center">
+                  <small class="text-muted">HTML</small>
+                  <small class="text-muted">CSS</small>
+                  <small class="text-muted">Bootstrap</small>
+                  <small class="text-muted">jQuery</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 mb-4">
             <div class="card project-item"></div>
           </div>
-          <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="col-12 col-sm-6 col-lg-4 mb-4">
             <div class="card project-item"></div>
           </div>
-          <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="col-12 col-sm-6 col-lg-4 mb-4">
             <div class="card project-item"></div>
           </div>
-          <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="col-12 col-sm-6 col-lg-4 mb-4">
             <div class="card project-item"></div>
           </div>
-          <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="col-12 col-sm-6 col-lg-4 mb-4">
             <div class="card project-item"></div>
           </div>
-          <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="col-12 col-sm-6 col-lg-4 mb-4">
             <div class="card project-item"></div>
           </div>
-          <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
-            <div class="card project-item"></div>
-          </div>
-          <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
-            <div class="card project-item"></div>
-          </div>
-          <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+          <div class="col-12 col-sm-6 col-lg-4 mb-4">
             <div class="card project-item"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
       crossorigin="anonymous"
     ></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
