@@ -277,11 +277,11 @@ header {
   background-color: #0493b0;
   color: #fff;
   text-align: center;
-  width: 30%;
+  width: 35%;
 }
 
 .tech-content {
-  width: 90%;
+  width: 65%;
 }
 
 .tech-content span {
@@ -354,7 +354,7 @@ header {
 }
 
 .project-item i {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .project-item .card-title h3 {
