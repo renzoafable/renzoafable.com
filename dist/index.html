@@ -38,52 +38,6 @@
   <body>
     <header>
       <div class="container">
-        <nav class="navbar navbar-expand-lg">
-          <a href="#" class="navbar-brand mr-auto">
-            <img
-              src="./assets/images/logo-white.png"
-              alt="Main logo"
-              class="logo-main"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarCollapse"
-            aria-controls="navbarCollapse"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="icon ion-ios-menu"></i>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarCollapse"
-          >
-            <ul class="navbar-nav text-center">
-              <li class="nav-item link-container">
-                <a class="nav-link" data-smooth="#about" href="#about">About</a>
-              </li>
-              <li class="nav-item link-container">
-                <a class="nav-link" data-smooth="#about" href="#experience"
-                  >Experience</a
-                >
-              </li>
-              <li class="nav-item link-container">
-                <a class="nav-link" data-smooth="#about" href="#project"
-                  >Projects</a
-                >
-              </li>
-              <li class="nav-item link-container">
-                <a class="nav-link" data-smooth="#about" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-
-      <div class="container">
         <div class="header-text-box">
           <h1>
             Hello, I'm <span class="name">Renzo Afable</span>. <br />
@@ -92,6 +46,49 @@
         </div>
       </div>
     </header>
+
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+      <div class="container">
+        <a href="#" class="navbar-brand mr-auto">
+          <img
+            src="./assets/images/logo-white.png"
+            alt="Main logo"
+            class="logo-main"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="icon ion-ios-menu"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarCollapse"
+        >
+          <ul class="navbar-nav text-center">
+            <li class="nav-item link-container">
+              <a class="nav-link" data-smooth="#about" href="#about">About</a>
+            </li>
+            <li class="nav-item link-container">
+              <a class="nav-link" data-smooth="#about" href="#experience"
+                >Experience</a
+              >
+            </li>
+            <li class="nav-item link-container">
+              <a class="nav-link" data-smooth="#about" href="#project"
+                >Projects</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <section class="section-about" id="about">
       <h2>About</h2>
@@ -487,6 +484,39 @@
         </div>
       </div>
     </section>
+
+    <footer class="bg-dark">
+      <div class="container">
+        <div class="footer-contact">
+          <div class="social-links">
+            <div class="social-link-container">
+              <a href="https://github.com/renzoafable" target="_blank"
+                ><i class="icon ion-logo-github"></i
+              ></a>
+            </div>
+            <div class="social-link-container">
+              <a href="https://www.linkedin.com/in/renzoafable/" target="_blank"
+                ><i class="icon ion-logo-linkedin"></i
+              ></a>
+            </div>
+            <div class="social-link-container">
+              <a
+                href="https://www.instagram.com/lorenzmatthewafbl/"
+                target="_blank"
+                ><i class="icon ion-logo-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="social-addresses">
+            <p class="text-center mb-0">Email: renzoafable@gmail.com</p>
+            <p class="text-center mb-0">Mobile: +(63) 917 877 4953</p>
+          </div>
+        </div>
+        <p class="text-center text-uppercase mt-3 mb-0">
+          Renzo Afable &copy; <span>2019</span>
+        </p>
+      </div>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

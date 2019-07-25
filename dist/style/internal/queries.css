@@ -5,7 +5,8 @@
   }
 
   section {
-    padding: 30px 0;
+    padding-top: 60px;
+    padding-bottom: 20px;
   }
 
   h1 {
@@ -25,6 +26,10 @@
 
   h3 {
     font-size: 130%;
+  }
+
+  .logo-main {
+    height: 20px;
   }
 
   figure {
@@ -48,12 +53,25 @@
   .experience-header p {
     text-align: center;
   }
+
+  .footer-contact {
+    flex-direction: column;
+  }
+
+  .footer-contact .social-links {
+    margin-bottom: 5px;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {
   html {
     font-size: 12px;
+  }
+
+  section {
+    padding-top: 80px;
+    padding-bottom: 40px;
   }
 
   h1 {
@@ -70,6 +88,10 @@
 
   h3 {
     font-size: 130%;
+  }
+
+  .logo-main {
+    height: 30px;
   }
 
   .about-principle p {
@@ -105,12 +127,24 @@
   .experience-header p {
     text-align: center;
   }
+
+  .footer-contact {
+    flex-direction: column;
+  }
+
+  .footer-contact .social-links {
+    margin-bottom: 8px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
   html {
     font-size: 14px;
+  }
+
+  section {
+    padding-top: 90px;
   }
 
   h1 {
@@ -127,6 +161,10 @@
 
   h3 {
     font-size: 110%;
+  }
+
+  .logo-main {
+    height: 32px;
   }
 
   .about-principle p {
@@ -170,6 +208,10 @@
     font-size: 14px;
   }
 
+  section {
+    padding-top: 100px;
+  }
+
   h1 {
     font-size: 250%;
   }
@@ -180,6 +222,10 @@
 
   h3 {
     font-size: 120%;
+  }
+
+  .logo-main {
+    height: 32px;
   }
 
   .about-principle i {
