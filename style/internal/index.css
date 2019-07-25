@@ -24,8 +24,8 @@ html {
 }
 
 section {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 110px;
+  padding-bottom: 60px;
 }
 
 a,
@@ -105,7 +105,7 @@ h3 {
 /* ------------------------------ */
 
 .logo-main {
-  height: 80px;
+  height: 35px;
   width: auto;
 }
 
@@ -166,6 +166,10 @@ header {
 /* MAIN NAV */
 /* ------------------------------ */
 
+nav {
+  border-bottom: 4px solid var(--main-blue-color);
+}
+
 .navbar-toggler i {
   color: rgba(255, 255, 255, 1);
   font-size: 2rem;
@@ -190,7 +194,7 @@ header {
 
 .link-container a:hover,
 .link-container a:active {
-  border-bottom: 2px solid var(--main-blue-color);
+  border-bottom: 2px solid var(--main-red-color);
 }
 
 /* ------------------------------ */
@@ -359,4 +363,48 @@ header {
 
 .project-item .card-title h3 {
   font-size: 110%;
+}
+
+/* ------------------------------ */
+/* FOOTER */
+/* ------------------------------ */
+
+footer {
+  padding: 2rem;
+}
+
+.footer-contact {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.social-links,
+.social-link-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link-container {
+  background-color: #434b53;
+  cursor: pointer;
+  margin: 0 5px;
+  height: 4rem;
+  width: 4rem;
+  transition: all 500ms;
+}
+
+.social-link-container:hover {
+  background-color: var(--main-blue-color);
+  border: 2px solid var(--shade-blue-color);
+}
+
+.social-link-container .icon {
+  color: #fff;
+  font-size: 1.7rem;
+}
+
+footer span {
+  color: var(--main-red-color);
 }
