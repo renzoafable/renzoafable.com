@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="./style/external/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="./style/external/bootstrap-reboot.min.css" />
     <link rel="stylesheet" href="./style/external/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style/external/animate.css" />
     <link rel="stylesheet" href="./style/external/normalize.css" />
     <link rel="stylesheet" href="./style/internal/index.css" />
     <link rel="stylesheet" href="./style/internal/queries.css" />
@@ -85,6 +86,14 @@
                 >Projects</a
               >
             </li>
+            <li class="nav-item resume-container">
+              <a
+                class="nav-link"
+                href="./assets/files/afable_resume.pdf"
+                download="resume"
+                >Resume</a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -96,25 +105,33 @@
         <div class="row mb-5">
           <div class="col-6 col-xl-3 px-lg-4 about-principle">
             <i class="icon ion-ios-phone-portrait"></i>
-            <h3>Responsive</h3>
-            <p>My layouts work on any device.</p>
+            <div>
+              <h3>Responsive</h3>
+              <p>My layouts work on any device.</p>
+            </div>
           </div>
           <div class="col-6 col-xl-3 px-lg-4 about-principle">
             <i class="icon ion-ios-timer"></i>
-            <h3>Fast</h3>
-            <p>
-              I make websites with fast load times in mind.
-            </p>
+            <div>
+              <h3>Fast</h3>
+              <p>
+                I make websites with fast load times in mind.
+              </p>
+            </div>
           </div>
           <div class="col-6 col-xl-3 px-lg-4 about-principle">
             <i class="icon ion-ios-person"></i>
-            <h3>User-friendly</h3>
-            <p>I prefer creating easy to use UI/UX.</p>
+            <div>
+              <h3>User-friendly</h3>
+              <p>I prefer creating easy to use UI/UX.</p>
+            </div>
           </div>
           <div class="col-6 col-xl-3 px-lg-4 about-principle">
             <i class="icon ion-ios-jet"></i>
-            <h3>Dynamic</h3>
-            <p>I like making websites come to life.</p>
+            <div>
+              <h3>Dynamic</h3>
+              <p>I like making websites come to life.</p>
+            </div>
           </div>
         </div>
         <div class="row">
@@ -530,6 +547,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.waypoints.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script>
       var typed = new Typed('.typed', {
