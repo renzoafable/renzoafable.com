@@ -175,7 +175,8 @@ nav {
   font-size: 2rem;
 }
 
-.link-container {
+.link-container,
+.resume-container {
   display: inline-block;
   margin: 4px 15px;
 }
@@ -195,6 +196,24 @@ nav {
 .link-container a:hover,
 .link-container a:active {
   border-bottom: 2px solid var(--main-red-color);
+}
+
+.resume-container a:link,
+.resume-container a:visited {
+  color: #ffffff;
+  display: inline-block;
+  border: 2px solid var(--main-blue-color);
+  background-color: var(--main-blue-color);
+  font-size: 80%;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.resume-container a:hover,
+.resume-container a:active {
+  background-color: var(--shade-blue-color);
 }
 
 /* ------------------------------ */
@@ -380,10 +399,15 @@ footer {
 }
 
 .social-links,
-.social-link-container {
+.social-link-container,
+.social-addresses {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.social-addresses {
+  flex-direction: column;
 }
 
 .social-link-container {
